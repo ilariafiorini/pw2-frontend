@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pw2-frontend2": {
+    "pw2-frontend": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/pw2-frontend2",
+            "outputPath": "dist/pw2-frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "pw2-frontend2:build:production"
+              "browserTarget": "pw2-frontend:build:production"
             },
             "development": {
-              "browserTarget": "pw2-frontend2:build:development"
+              "browserTarget": "pw2-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pw2-frontend2:build"
+            "browserTarget": "pw2-frontend:build"
           }
         },
         "test": {
@@ -94,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "8b0c66b8-14ee-435a-a37e-2526c40ec0cd"
   }
 }
