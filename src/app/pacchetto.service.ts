@@ -15,7 +15,7 @@ export class PacchettoService {
 
   getPacchetti(idagenzia: number): Promise<Pacchetto[] | undefined> {
     const url =` ${this.baseurl}/${idagenzia}`;
-    return this.http.get<Pacchetto[] | undefined>(url).toPromise();
+    return this.http.get<Pacchetto[]>(url).toPromise();
 
   }
 

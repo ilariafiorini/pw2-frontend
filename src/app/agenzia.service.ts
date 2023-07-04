@@ -13,13 +13,13 @@ export class AgenziaService {
 
   getAgenzie(): Promise<Agenzia[] | undefined> {
     const url =` ${this.baseurl}`;
-    return this.http.get<Agenzia[] | undefined>(url).toPromise();
+    return this.http.get<Agenzia[]>(url).toPromise();
 
   }
 
   getAgenzia(id: number): Promise<Agenzia | undefined> {
     const url =` ${this.baseurl}/${id}`;
-    return this.http.get<Agenzia | undefined>(url).toPromise();
+    return this.http.get<Agenzia>(url).toPromise();
 
   }
 
