@@ -1,10 +1,12 @@
+<div class="card col-6">
+  <div class= "row col-12 shadow m-2 p-1" >
+    <div class="col-6" *ngIf="agenzia">
+      <h4>{{ agenzia.nome }}</h4>
+    </div>
 
-<div *ngIf="agenzia">
-  Agenzia: {{ agenzia.nome }}
-</div>
-<div *ngIf="agenzia">
-  Indirizzo: {{ agenzia.indirizzo }}
-</div>
-<div *ngIf="agenzia">
-  tel: {{ agenzia.tel }}
+    <div class="col-6" *ngIf="agenzia">
+
+      <a class="btn btn-outline-primary position-relative top-50 start-50 translate-middle" href="agenzia/{{agenzia.id}}" role="button" >Dettagli</a>
+    </div>
+  </div>
 </div>
