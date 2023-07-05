@@ -1,3 +1,9 @@
-<p>pacchetti-list works!</p>
-<app-pacchetto></app-pacchetto>
-<app-pacchetto></app-pacchetto>
+<h1>Elenco dei Pacchetti</h1>
+<app-pacchetto *ngFor="let pacchetto of pacchettoList"
+ [pacchetto]="pacchetto"
+></app-pacchetto>
+<div class="card col-6">
+  <div class= "row col-12 shadow m-2 p-1" >
+
+  <a  [routerLink]="'/agenzie/' + agenzia" class="btn btn-outline-primary position-relative  "  role="button" >Indietro</a>
+</div>

@@ -1,0 +1,31 @@
+<h1>Dettaglio dell'Agenzia</h1>
+<div class="row col 6">
+
+
+  <div class="card col-1">
+    <div class= "row col-12 shadow m-2 p-1 flex-grow-1" >
+      <!-- <div class="row col-12 "> -->
+        <a class="btn btn-outline-primary flex-grow-1 position-relative top-50 start-50 translate-middle d-flex justify-content-center align-items-center" href="agenzie" role="button" > <b> < </b>  </a>
+      <!-- </div> -->
+    </div>
+  </div>
+  <div class="card col-6">
+    <div class= "row col-12 shadow m-2 p-1" >
+
+      <div class=" row col-12" *ngIf="agenzia">
+        <h4>{{ agenzia.nome }}</h4>
+      </div>
+      <div class="row col-12" *ngIf="agenzia">
+        <h4>{{ agenzia.indirizzo }}</h4>
+      </div>
+      <div class="row col-12" *ngIf="agenzia">
+        <h4>{{ agenzia.tel }}</h4>
+      </div>
+
+      <div class=" row col-12" *ngIf="agenzia">
+
+        <a class="btn btn-outline-primary position-relative top-50 start-50 translate-middle" href="pacchetti/{{agenzia.id}}" role="button" >Pacchetti</a>
+      </div>
+    </div>
+  </div>
+</div>

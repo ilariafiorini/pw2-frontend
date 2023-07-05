@@ -6,7 +6,7 @@
 
     <div class="col-6" *ngIf="agenzia">
 
-      <a class="btn btn-outline-primary position-relative top-50 start-50 translate-middle" href="agenzia/{{agenzia.id}}" role="button" >Dettagli</a>
+      <a  [routerLink]="'/agenzie/' + agenzia.id" class="btn btn-outline-primary position-relative top-50 start-50 translate-middle"  role="button" >Dettagli</a>
     </div>
   </div>
 </div>

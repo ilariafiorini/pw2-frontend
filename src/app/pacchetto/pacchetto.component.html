@@ -1,1 +1,15 @@
-<p>pacchetto works!</p>
+<div class="card col-6">
+  <div class= "row col-12 shadow m-2 p-1" >
+    <div class="col-12" *ngIf="pacchetto">
+      destinazione: <h4> {{ pacchetto.destinazione }}</h4>
+    </div>
+    <div class="col-12" *ngIf="pacchetto">
+      durata: <h4>{{ pacchetto.durata }} giorni</h4>
+    </div>
+    <div class="col-12" *ngIf="pacchetto">
+      costo: <h4>{{ pacchetto.prezzo }} €</h4>
+    </div>
+
+   
+  </div>
+</div>
